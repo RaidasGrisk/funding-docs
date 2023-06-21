@@ -1,11 +1,13 @@
-'''
+"""
 Other models to consider
 https://huggingface.co/EMBEDDIA/litlat-bert
 
 read data from google sheets:
 https://towardsdatascience.com/read-data-from-google-sheets-into-pandas-without-the-google-sheets-api-5c468536550
 
-'''
+Pinecone:
+https://docs.pinecone.io/docs/semantic-text-search
+"""
 
 
 import pandas as pd
