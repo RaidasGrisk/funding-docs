@@ -184,5 +184,10 @@ def url_to_doc_to_text(url):
 for index, row in df.iterrows():
     url = row['doc_attachment_url']
     if not pd.isna(url):
-        text = url_to_doc_to_text(url)
-        df.at[index, 'PFSA'] = text
+        try:
+            text = url_to_doc_to_text(url)
+            df.at[index, 'PFSA'] = text
+        except:
+            print('error')
+
+df.to_parquet('output.parquet', index=False)
